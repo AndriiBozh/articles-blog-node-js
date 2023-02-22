@@ -1,0 +1,51 @@
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header-underline {
+  padding: 1px;
+  width: 70%;
+  background-color: black;
+  opacity: 0.2;
+  margin: 20px auto 35px;
+}
+
+.navigate-to-add-article-btn {
+  padding: 11px;
+  background-color: #17780c;
+  color: #f2f2f2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: right 0.5s;
+  position: fixed;
+  top: 1rem;
+  right: -70px;
+}
+
+.navigate-to-add-article-btn:hover {
+  opacity: 1;
+  right: 1rem;
+}
+
+.list-of-articles {
+  list-style: none;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-top: 1px solid #c2bbbb;
+}
+
+.genre-name {
+  font-style: italic;
+  text-transform: capitalize;
+}

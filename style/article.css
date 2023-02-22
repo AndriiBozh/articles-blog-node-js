@@ -1,0 +1,70 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.article form {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  align-self: center;
+}
+
+.article-text {
+  text-indent: 1rem;
+}
+
+.article-text::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-top: 1px solid #c2bbbb;
+}
+
+.details .author {
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.controls {
+  align-self: end;
+}
+
+.controls input[type="submit"],
+.edit-btn {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  border: 0.5px solid grey;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+.controls input[type="submit"]:hover,
+.edit-btn:hover {
+  opacity: 1;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #ec4f4f;
+}
+
+.edit-btn {
+  color: black;
+  background-color: #e0d320;
+
+  text-decoration: none;
+}

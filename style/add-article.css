@@ -1,0 +1,28 @@
+.add-article-form-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.add-article-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 5rem auto;
+  row-gap: 1rem;
+}
+
+.add-article-form input,
+.add-article-form select,
+.add-article-form textarea {
+  padding: 0.5rem;
+  letter-spacing: 3px;
+}
+
+select:invalid {
+  color: rgb(125, 128, 125);
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: -10px;
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/article.css" />
+    <title>Article</title>
+  </head>
+  <body>
+    <div class="article">
+      <form method="post" action="/manage/article/{{_id}}">
+        <h2 class="article-title">{{title}}</h2>
+        <p class="article-text">{{text}}</p>
+        <p class="details">
+          <span class="author">{{author}}</span>
+          <span class="date">{{formattedDate}}</span>
+          <span class="category">{{category}}</span>
+        </p>
+        <div class="controls"><input
+            type="submit"
+            value="Delete"
+            class="delete-btn"
+          />
+          <a href="/manage/edit/{{_id}}" class="edit-btn">Edit</a></div>
+
+      </form>
+
+      <a href="/" class="go-home-btn">Home</a>
+    </div>
+  </body>
+</html>

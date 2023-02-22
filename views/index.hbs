@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Articles</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Articles</div>
+      <a href="/manage/articles/add" class="navigate-to-add-article-btn">Add
+        article</a>
+      <div class="header-underline"></div>
+      <div class="articles">
+        <ul class="list-of-articles">
+
+          {{#each articles}}
+            <li>
+              <h2>{{title}}</h2>
+              <p>{{text}}</p>
+              <p class="details">
+                <span>{{author}}</span>
+                <span>{{formatDate date}}</span>
+                <span>genre: <span class="genre-name">{{category}}</span></span>
+              </p>
+              <a href="/article/{{_id}}">Read more</a>
+            </li>
+          {{/each}}
+
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>

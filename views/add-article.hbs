@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/add-article.css" />
+    <title>Add your article</title>
+  </head>
+  <body>
+    <div class="add-article-form-container">
+      <form
+        class="add-article-form"
+        method="post"
+        action="/manage/articles/add"
+        autocomplete="off"
+      >
+        <input type="text" id="title" name="title" placeholder="Title" />
+        <input type="text" id="name" name="author" placeholder="Your Name" />
+        <select name="category" id="category" required>
+          <option class="option" value="" selected>Select category
+          </option>
+          <option class="option" value="fiction">Fiction
+          </option>
+          <option class="option" value="drama">Drama
+          </option>
+          <option class="option" value="comedy">Comedy
+          </option>
+          <option class="option" value="other">Other
+          </option>
+        </select>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Add article" />
+      </form></div>
+
+  </body>
+</html>
